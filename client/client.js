@@ -18,7 +18,7 @@ console.log('Service Worker Registered...');
 //Register Push
 console.log('Registering Push...');
 
-if(registration.pushManager){
+if(register.pushManager){
 const subscription = await register.pushManager.subscribe({
 userVisibleOnly: true,
 applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
