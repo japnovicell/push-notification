@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 web: node server.js
+=======
+web: npm start
+>>>>>>> b2c61b5e9617ee9d4c0e167b499753706ccf39d8
