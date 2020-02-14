@@ -41,7 +41,7 @@ else{
 button.onclick = function() {
     // Ensure that the user can receive Safari Push Notifications.
     if ('safari' in window && 'pushNotification' in window.safari) {
-        var permissionData = window.safari.pushNotification.permission('web.com.example.domain');
+        var permissionData = window.safari.pushNotification.permission('web.com.herokuapp.push-noti-test');
         checkRemotePermission(permissionData);
     }
 };
@@ -50,8 +50,9 @@ var checkRemotePermission = function (permissionData) {
     if (permissionData.permission === 'default') {
         // This is a new web service URL and its validity is unknown.
         window.safari.pushNotification.requestPermission(
-            'https://domain.example.com', // The web service URL.
-            'web.com.example.domain',     // The Website Push ID.
+          'https://push-noti-test.herokuapp.com/', // The web service URL.
+          // 'https://domain.example.com', // The web service URL.
+          'web.com.herokuapp.push-noti-test',     // The Website Push ID.
             {}, // Data that you choose to send to your server to help you identify the user.
             checkRemotePermission         // The callback function.
         );
