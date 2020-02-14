@@ -17,7 +17,7 @@ console.log('Service Worker Registered...');
 
 //Register Push
 console.log('Registering Push...');
-const subscription = await register.pushManager.subscribe({
+const subscription = await register.safari.pushNotification.subscribe({
 userVisibleOnly: true,
 applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
 });
