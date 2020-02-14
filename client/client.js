@@ -3,7 +3,7 @@ const publicVapidKey =
 
 // Check for service worker
 if('serviceWorker' in navigator){
-    send()(err => console.error(err));
+    send();
 }
 
 // Register Serviceworker, Register Push, Send Push
