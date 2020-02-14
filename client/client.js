@@ -3,7 +3,7 @@ const publicVapidKey =
 
 // Check for service worker
 if('serviceWorker' in navigator){
-    send();
+    send().catch(err => console.error(err));
 }
 
 // Register Serviceworker, Register Push, Send Push
@@ -17,7 +17,7 @@ console.log('Service Worker Registered...');
 
 //Register Push
 console.log('Registering Push...');
-const subscription = await register.safari.pushNotification.subscribe({
+const subscription = await register.pushManager.subscribe({
 userVisibleOnly: true,
 applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
 });
