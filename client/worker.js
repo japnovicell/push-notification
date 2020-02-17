@@ -9,25 +9,23 @@ self.addEventListener ('push', e=> {
     });
 });
 
-self.addEventListener('install', (e) => {
-    var cacheName = 'js13kPWA-v1';
-var appShellFiles = [
-  'client.js',
+var CACHE_NAME = 'my-site-cache-v1';
+var urlsToCache = [
+  '/',
   'index.html',
+  'client.js',
   'manifest.json',
   '/index.js'
 ];
-self.addEventListener('install', (e) => {
-    console.log('[Service Worker] Install');
-    e.waitUntil(
-      caches.open(cacheName).then((cache) => {
-            console.log('[Service Worker] Caching all: app shell and content');
-        return cache.addAll(contentToCache);
+
+self.addEventListener('install', function(event) {
+  // Perform install steps
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
       })
-    );
-  });
-
-
-    console.log('[Service Worker] Install');
+  );
 });
 
