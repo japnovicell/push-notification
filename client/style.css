@@ -1,5 +1,13 @@
 .center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+img{
+    background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+  max-width: 100%;
 }
