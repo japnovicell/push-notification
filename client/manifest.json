@@ -1,22 +1,18 @@
 {
-  "short_name": "test",
-  "name": "test test",
-  "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
+  "short_name": "test push noti",
+  "name": "Push noti",
+  "description": "Progressive Web App that sends push notifications",
   "icons": [
     {
       "src": "https://limg.imgsmail.ru/touchsplash/v/i/android-touch-icon-192x192-f70c697eeb.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "https://www.barion.dk/wp-content/uploads/2018/04/cropped-barion-icon.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
 
+
   ],
-  "start_url": "https://push-noti-test.herokuapp.com/",
-  "background_color": "red",
+  "start_url": ".",
+  "background_color": "blue",
   "display": "standalone",
-  "theme_color": "red"
+  "theme_color": "blue"
 }
