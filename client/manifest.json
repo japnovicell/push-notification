@@ -12,13 +12,8 @@
       "src": "https://www.barion.dk/wp-content/uploads/2018/04/cropped-barion-icon.png",
       "type": "image/png",
       "sizes": "512x512"
-    },
-    {
-      "src": "https://lh3.googleusercontent.com/proxy/eeunMbsMLxYno7hkeHtp_GpKFRLEI4ugu8QwjrFEu_MZWXHOz8YvIS0mPTgIFS53ux409I67E_hBOrrZvlWrheRw2y7dQ029fyjRgf-bMmcbYVLayjA-Ab3mzz2-1ArRf8EfVhXupstIxVvKkA",
-      "type": "image/png",
-      "sizes": "32x32"
-
     }
+
   ],
   "start_url": "https://push-noti-test.herokuapp.com/",
   "background_color": "red",
