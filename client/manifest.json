@@ -7,6 +7,11 @@
       "src": "https://limg.imgsmail.ru/touchsplash/v/i/android-touch-icon-192x192-f70c697eeb.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "https://htg.dk/wp-content/uploads/2018/02/arrow-png-22.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
 
 
