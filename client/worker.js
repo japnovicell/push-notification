@@ -18,10 +18,6 @@ var appShellFiles = [
   '/index.js'
 
 ];
-var gamesImages = [];
-for(var i=0; i<games.length; i++) {
-  gamesImages.push('data/img/'+games[i].slug+'.jpg');
-}
 var contentToCache = appShellFiles.concat(gamesImages);
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
