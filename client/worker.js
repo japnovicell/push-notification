@@ -16,9 +16,7 @@ var appShellFiles = [
   'index.html',
   'manifest.json',
   '/index.js'
-
 ];
-var contentToCache = appShellFiles.concat(gamesImages);
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
     e.waitUntil(
