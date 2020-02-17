@@ -3,12 +3,12 @@
   "name": "test test",
   "icons": [
     {
-      "src": "https://i.ya-webdesign.com/images/png-test-image-11.png",
+      "src": "https://limg.imgsmail.ru/touchsplash/v/i/android-touch-icon-192x192-f70c697eeb.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://i.ya-webdesign.com/images/png-test-image-11.png",
+      "src": "https://www.barion.dk/wp-content/uploads/2018/04/cropped-barion-icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
